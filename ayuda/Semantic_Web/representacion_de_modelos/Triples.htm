@@ -1,0 +1,69 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+
+
+
+
+<head>
+<title>Triples</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="StyleSheet" href="../../default.css"><style title="hcp" type="text/css">
+<!--
+p.hcp1 { text-align:justify; }
+p.hcp2 { text-align:justify; font-size:8pt; }
+-->
+</style>
+</head>
+<body>
+<h1 style="text-align: center;" Align="center">Triples</h1>
+
+<p class="hcp1">En esta notación, cada aserción simplemente 
+ consiste de los URI del Sujeto y Predicado y del URI o valor literal del 
+ Objeto escritos en ese orden. Para escribir un URI se encierra entre corchetes 
+ y un valor literal se encierra entre comillas. Por ejemplo:</p>
+
+<p class="hcp1">&nbsp;</p>
+
+<p class="hcp2">&lt;http://proyecto-rg.tripod.../contacto#gl&gt; 
+ &nbsp;&lt; http://www.w3.../contact#mailbox&gt; 
+ &nbsp;&lt;mailto:uno@hotmail.com&gt;</p>
+
+<p class="hcp2">&nbsp;</p>
+
+<p style="text-align: justify; font-size: 10pt;">&lt;http://proyecto-rg.tripod.../contacto#gl&gt; 
+ &nbsp;&lt; http://www.w3.../contact#FullName&gt; 
+ &quot;Gabriel Lozano”</p>
+
+<p class="hcp1">&nbsp;</p>
+
+<p class="hcp1">Esta notación puede resultar muy extensa 
+ y poco practica debido a la longitud de los URI de las partes. Para esto, 
+ se utilizan los XML qualified names o QNames. Un qname consiste de un 
+ prefijo asignado previamente a un URI, seguido por dos puntos (:) y un 
+ nombre local. Así, por ejemplo, si a la URI http://proyecto-rg.tripod.com/participantes/contacto# 
+ se le asigna el prefijo participantes, entonces el qname participantes:Gabriel 
+ es la abreviación de http://proyecto-rg.tripod.com/participantes/contacto#Gabriel. 
+ Así, las tripletas anteriores quedarían de la siguiente manera:</p>
+
+<p class="hcp1">&nbsp;</p>
+
+<p class="hcp1">Prefijos:</p>
+
+<p class="hcp1">participantes: URi: http://proyecto-rg.tripod.com/participantes/contacto#</p>
+
+<p class="hcp1">contacto: URI: http://www.w3.org/2000/10/swap/pim/contact#</p>
+
+<p class="hcp1">&nbsp;</p>
+
+<p class="hcp1">Aserciones:</p>
+
+<p class="hcp1">participantes:gl contacto:mailbox mailto:uno@hotmail.com</p>
+
+<p class="hcp1">participantes:gl contacto:FullName “Gabriel 
+ Lozano”</p>
+
+</body>
+</html>

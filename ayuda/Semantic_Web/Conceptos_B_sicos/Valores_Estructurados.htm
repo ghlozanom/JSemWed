@@ -1,0 +1,68 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+
+
+
+
+<head>
+<title>Valores Estructurados y Blank Nodes</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="StyleSheet" href="../../default.css"><style title="hcp" type="text/css">
+<!--
+p.hcp1 { text-align:center; }
+-->
+</style>
+</head>
+<body>
+<h1 style="text-align: center;" Align="center">Valores Estructurados y Blank Nodes</h1>
+
+<p>Todo sería sencillo si simplemente utilizando el modelo RDF con Sujeto, 
+ Predicado y Objeto se pudiera decir cualquier cosa. Supongamos que tenemos 
+ la siguiente aserción:</p>
+
+<p>&nbsp;</p>
+
+<p Align="center" class="hcp1">ac:hombre_luna ej:fecha “20 de Julio de 1969”</p>
+
+<p Align="center" class="hcp1">&nbsp;</p>
+
+<p>Que dice que el acontecimiento del hombre en la luna tuvo lugar el 20 
+ de Julio de 1969. Pero se podría necesitar esta información más detallada, 
+ es decir, en lugar de utilizar un literal para el valor de la propiedad 
+ ej:fecha, se podría necesitar aparte el día, el mes y el año. Esto, en 
+ principio, no se puede. La solución propuesta a este problema es considerando 
+ la información estructurada (en este caso la fecha en que el hombre estuvo 
+ por primera vez en la luna) como un recurso y luego realizando aserciones 
+ sobre este recurso. Veamos el grafo:</p>
+
+<p>&nbsp;</p>
+
+<p Align="center" class="hcp1"><img src="../../vs1.GIF"
+						x-maintain-ratio=TRUE
+						style="border: none;
+								width: 484px;
+								height: 316px;
+								float: none;"
+						width=484
+						height=316
+						border=0></p>
+
+<p Align="center" class="hcp1">&nbsp;</p>
+
+<p style="text-align: justify;">Este grafo esta perfecto. En este caso, 
+ la información estructurada se representa por un nodo que no tiene URI, 
+ un nodo en blanco (blank node, en ingles). No debe ser necesario identificar 
+ estos recursos desde fuera del modelo RDF en donde se está utilizando. 
+ De ser así, se les debe asignar un URI. Además, de alguna manera se deben 
+ poder representar estos nodos en blanco en la representación por tripletas. 
+ Esto se realiza con identificadores de la siguiente manera: _:nombre, 
+ con nombre identificando el nodo en blanco. En el ejemplo quedaría :_fecha. 
+ Los nodos en blanco solo se deben utilizar en Sujetos u Objetos, nunca 
+ en los Predicados. Por medio de los nodos en blanco, con RDF se pueden 
+ representar relaciones n-arias, no solamente binarias.</p>
+
+</body>
+</html>

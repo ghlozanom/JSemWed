@@ -1,0 +1,67 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+
+
+
+
+<head>
+<title>RDF/XML</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="StyleSheet" href="../../default.css"><style title="hcp" type="text/css">
+<!--
+p.hcp1 { text-align:justify; }
+-->
+</style>
+</head>
+<body>
+<h1 style="text-align: center;" Align="center">RDF/XML</h1>
+
+<p class="hcp1">Para serializar RDF y hacer posible el 
+ intercambio de aserciones entre aplicaciones y su posterior procesamiento, 
+ la W3C creo RDF/XML. RDF/XML define un lenguaje de etiquetado XML. Estas 
+ etiquetas permiten a los programas que las conozcan procesar la información 
+ contenida en el documento. El siguiente ejemplo muestra unas aserciones 
+ de un modelo de RDF en formato RDF/XML:</p>
+
+<p>&nbsp;</p>
+
+<p>&lt;?xml version=&quot;1.0&quot;?&gt;</p>
+
+<p>&lt;rdf:RDF xmlns:rdf=&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#&quot;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;xmlns:contact=&quot;http://www.w3.org/2000/10/swap/pim/contact#&quot;&gt;</p>
+
+<p>&nbsp;&nbsp;&lt;contact:Person 
+ rdf:about=&quot;http://proyecto-rg.tripod.com/participantes/contact#me&quot;&gt;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;contact:fullName&gt;Gabriel 
+ Lozano&lt;/contact:fullName&gt;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;contact:mailbox 
+ rdf:resource=&quot;mailto:uno@hotmail.com&quot;/&gt;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;contact:personalTitle&gt;Mr.&lt;/contact:personalTitle&gt; 
+ </p>
+
+<p>&nbsp;&nbsp;&lt;/contact:Person&gt;</p>
+
+<p>&lt;/rdf:RDF&gt;</p>
+
+<p>&nbsp;</p>
+
+<p class="hcp1">Este ejemplo dice que hay un contacto de 
+ tipo persona, que tiene nombre Gabriel Lozano, que tiene como correo uno@hotmail.com 
+ (en este caso no es cierto y esto ilustra que en Semantic Web cualquier 
+ persona o aplicación puede decir cualquier cosa sobre cualquier recurso, 
+ aspecto importante e interesante a tener en cuenta) y que tiene como titulo 
+ personal Mr. Este formato es fácilmente intercambiable entre aplicaciones 
+ y si la aplicación conoce estos tags, podrá sacar provecho de ellos. Por 
+ ejemplo, una aplicación de correo, puede obtener la dirección de correo 
+ de Gabriel Lozano para enviarle un mensaje importante a partir de estas 
+ aserciones.</p>
+
+</body>
+</html>

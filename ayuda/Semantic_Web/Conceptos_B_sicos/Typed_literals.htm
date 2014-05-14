@@ -1,0 +1,62 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+
+
+
+
+<head>
+<title>Typed literals</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="StyleSheet" href="../../default.css"><style title="hcp" type="text/css">
+<!--
+p.hcp1 { text-align:justify; }
+p.hcp2 { text-align:center; }
+-->
+</style>
+</head>
+<body>
+<h1 style="text-align: center;" Align="center">Typed literals</h1>
+
+<p class="hcp1">A los literales que se utilizan como Objeto 
+ en las aserciones también se les puede asignar un tipo de datos que entregan 
+ mayor información sobre el literal y permitan su mejor procesamiento. 
+ A estos literales se les llama literales con tipo (typed literals, en 
+ ingles). Estos literales con tipo se usan cuando el valor de un literal 
+ se quiere utilizar como un tipo de valor especializado, como un número 
+ entero, un valor de fecha o un booleano, por ejemplo. Una aserción puede 
+ contener un Objeto que tenga por valor un número como, por ejemplo, el 
+ número de empleados con los que cuenta una organización, y una aplicación 
+ puede procesar perfectamente esta aserción, pero con un conocimiento previo 
+ del tipo de dato del Objeto de la aserción, no por información contenida 
+ en la aserción. Pero otra aplicación que no tenga este conocimiento previo 
+ no estaría en capacidad de procesar de manera correcta esta aserción.</p>
+
+<p class="hcp1">&nbsp;</p>
+
+<p class="hcp1">Un literal de tipo en RDF se forma juntando 
+ el valor del literal con el URI que identifica al tipo del literal. Por 
+ ejemplo:</p>
+
+<p class="hcp1">&nbsp;</p>
+
+<p Align="center" class="hcp2">ej:presidencia ej:numero_emp “1200”^^xsd:integer</p>
+
+<p Align="center" class="hcp2">&nbsp;</p>
+
+<p class="hcp1">En este caso, el tipo de dato asociado 
+ al Objeto es xsd:integer. </p>
+
+<p class="hcp1">&nbsp;</p>
+
+<p class="hcp1">Los tipos de datos utilizados son definidos 
+ externamente a RDF (con excepción de rdf:XMLLiteral, el cual se utiliza 
+ para identificar contenido XML en el Objeto). Por ejemplo, el tipo de 
+ datos xsd:integer es un tipo de dato de XMLSchema.</p>
+
+<p class="hcp1">&nbsp;</p>
+
+</body>
+</html>

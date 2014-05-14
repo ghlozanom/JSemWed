@@ -1,0 +1,70 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+
+
+
+
+<head>
+<title>RDF Reification</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="StyleSheet" href="../../default.css"><style title="hcp" type="text/css">
+<!--
+p.hcp1 { font-size:8pt; text-align:justify; }
+-->
+</style>
+</head>
+<body>
+<h1 style="text-align: center;" Align="center">RDF Reification</h1>
+
+<p>Algunas veces es necesario decir cosas acerca de los mismos Statements. 
+ Por ejemplo, si en una tienda alguien fija el precio de los artículos 
+ en venta, seria provechoso saber quien fijo el precio de los artículos, 
+ en que fecha, que permisos tiene la persona que fijo los precios, etc. 
+ RDF cuenta con un vocabulario que permite ingresar Statements acerca de 
+ los Statemets, una clase de “meta-Statements”. Una descripción de un Statement 
+ utilizando este vocabulario se llama “reification”. Este vocabulario consiste 
+ de los términos rdf:Statement, rdf:subject, ref:predicate y rdf:object. 
+ </p>
+
+<p>&nbsp;</p>
+
+<p>Por ejemplo, tenemos el siguiente Statement:</p>
+
+<p>&nbsp;</p>
+
+<p style="font-size: 8pt; text-align: center;" Align="center">http://unal.edu.co/estudiantes/#GabrielLozano &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://unal.edu.co/calificaciones/#nota 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“4.0”</p>
+
+<p>&nbsp;</p>
+
+<p>Queremos saber quien hizo este Statement. Lo primero asociar un recurso 
+ con el Statement y luego si se podrá decir lo que se quiera acerca de 
+ este. Por ejemplo:</p>
+
+<p>&nbsp;</p>
+
+<p class="hcp1">http://unal.edu.co/Statements/#st123 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rdf:type 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rdf:Statement</p>
+
+<p class="hcp1">http://unal.edu.co/Statements/#st123 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rdf:subject 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://unal.edu.co/estudiantes/#GabrielLozano</p>
+
+<p class="hcp1">http://unal.edu.co/Statements/#st123 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rdf:predicate 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://unal.edu.co/calificaciones/#nota</p>
+
+<p class="hcp1">http://unal.edu.co/Statements/#st123 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rdf:object 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“4.0”</p>
+
+<p class="hcp1">http://unal.edu.co/Statements/#st123 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dc:creator 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://unal.edu.co/profesores/#prof2342</p>
+
+</body>
+</html>

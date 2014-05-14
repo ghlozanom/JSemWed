@@ -1,0 +1,57 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+
+
+
+
+<head>
+<title>SubClases</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="StyleSheet" href="../../default.css"><style title="hcp" type="text/css">
+<!--
+p.hcp1 { text-align:center; }
+-->
+</style>
+</head>
+<body>
+<h1 style="text-align: center;" Align="center">SubClases</h1>
+
+<p>Para indicar que una clase es una especialización de otra se utiliza 
+ rdfs:subClassOf. Por ejemplo:</p>
+
+<p>&nbsp;</p>
+
+<p Align="center" class="hcp1">ej:Informe &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rdfs:subClassOf 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ej:Documento</p>
+
+<p>&nbsp;</p>
+
+<p>Dice que informe es de tipo ej:Documento. Esto se interpreta como que 
+ ej:Informe es un ej:Documento más ej:Documento no necesariamente es un 
+ ej:Informe. Sin embargo esta interpretación debe darla el software que 
+ debe ser escrito para entender y procesar este tipo de aserciones. La 
+ propiedad rdfs:subclaseOf es transitiva, así si tenemos:</p>
+
+<p>&nbsp;</p>
+
+<p Align="center" class="hcp1">ej:InformeParcial &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rdfs:subClassOf 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ej:Informe</p>
+
+<p>&nbsp;</p>
+
+<p>También será cierta la siguiente aserción:</p>
+
+<p>&nbsp;</p>
+
+<p Align="center" class="hcp1">ej:InformeParcial &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rdfs:subClassOf 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ej:Documento</p>
+
+<p>&nbsp;</p>
+
+<p>RDFS define todas las clases como subclases de rdfs:Resource.</p>
+
+</body>
+</html>

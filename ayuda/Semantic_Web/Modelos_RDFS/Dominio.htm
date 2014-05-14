@@ -1,0 +1,67 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+
+
+
+
+<head>
+<title>Dominio</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="StyleSheet" href="../../default.css">
+</head>
+<body>
+<h1 style="text-align: center;" Align="center">Dominio y Rango de Propiedades</h1>
+
+<p>rdfs:range específica que los valores de una propiedad son de una clase 
+ determinada. Por ejemplo:</p>
+
+<p>&nbsp;</p>
+
+<p>ej:Persona &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rdf:type 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rdfs:Class</p>
+
+<p>ej:autor &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rdf:type 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rdf:Property</p>
+
+<p>ej:autor &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rdfs:range 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ej:Persona</p>
+
+<p>&nbsp;</p>
+
+<p>Esto dice que el valor de la propiedad ej:autor debe ser un Object de 
+ tipo ej:Persona.</p>
+
+<p>Una propiedad utilizada como Subject puede tener muchos valores de rdfs:range 
+ como Predicate en diversas aserciones. El valor de rdfs:range también 
+ puede indicar un literal con tipo. Por ejemplo:</p>
+
+<p>&nbsp;</p>
+
+<p>ej:numeroPáginas rdf:type rdfs:Property</p>
+
+<p>ej:numeroPáginas rdfs:rang xsd:integer</p>
+
+<p>&nbsp;</p>
+
+<p>rdfs:domain es una propiedad que indica que una propiedad aplica a cierta 
+ clase.</p>
+
+<p>&nbsp;</p>
+
+<p>Por ejemplo:</p>
+
+<p>&nbsp;</p>
+
+<p>ej:autor &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rdfs:domain 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ej:Documento</p>
+
+<p>&nbsp;</p>
+
+<p>lo cual dice que el dominio de la propiedad ej:autor son objetos de 
+ tipo ej:Documento. Una propiedad puede tener varios valores de dominio.</p>
+
+</body>
+</html>

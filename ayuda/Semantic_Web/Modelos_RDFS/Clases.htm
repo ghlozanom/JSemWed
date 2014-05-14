@@ -1,0 +1,57 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+
+
+
+
+<head>
+<title>Clases</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="StyleSheet" href="../../default.css"><style title="hcp" type="text/css">
+<!--
+p.hcp1 { text-align:center; }
+-->
+</style>
+</head>
+<body>
+<h1 style="text-align: center;" Align="center">Clases</h1>
+
+<p>Para poder describir cosas en algún contexto primero se deben poder 
+ identificar estas cosas a describir. Estas cosas a describir RDFS las 
+ define como clases. Estas clases se pueden utilizar para describir cualquier 
+ cosa, como artículos, páginas Web, artículos hasta conceptos abstractos. 
+ Las clases son descritas utilizando los recursos de RDFS como rdfs:Class 
+ y rdfs:Resource y las propiedades rdf:type y rdfs:subClassOf. </p>
+
+<p>&nbsp;</p>
+
+<p>En RDFS, una clase es cualquier recurso que tenga como valor de la propiedad 
+ rdf:type rdfs:Class. Por ejemplo para decir que ej:Documento es una clase 
+ (por convención las clases comienzan por mayúsculas mientras las propiedades 
+ por minúscula) se realiza la siguiente aserción:</p>
+
+<p>&nbsp;</p>
+
+<p Align="center" class="hcp1">ej:Documento &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rdf:type 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rdfs:Class</p>
+
+<p Align="center" class="hcp1">&nbsp;</p>
+
+<p>rdf:type sirve para decir que un recurso es instancia de una clase determinada. 
+ Así, si tenemos:</p>
+
+<p>&nbsp;</p>
+
+<p Align="center" class="hcp1">ej:RdfPrimer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rdf:type 
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ej:Documento</p>
+
+<p Align="center" class="hcp1">&nbsp;</p>
+
+<p>Sirve para decir que ej:RdfPrimer es una instancia de la clase ej:Documento. 
+ Un recurso puede instanciar más de una clase.</p>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+
+
+
+
+<head>
+<title>RDFS</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="StyleSheet" href="../../default.css"><style title="hcp" type="text/css">
+<!--
+p.hcp1 { text-align:justify; }
+-->
+</style>
+</head>
+<body>
+<h1 style="text-align: center;" Align="center">RDFS</h1>
+
+<p class="hcp1">RDF solo permite realizar aserciones, decir 
+ cosas acerca de los recursos mas no permite definir vocabularios en sí, 
+ vocabularios que son los que luego se van a utilizar en las aserciones. 
+ Estos vocabularios describen clases y recursos y especifican propiedades 
+ para describirlos. Por ejemplo, se desea describir la clase educación:estudiante 
+ (donde educación representa un QName), y usar propiedades como educación:grado 
+ y educación:nota entre otras propiedades para describirlo. Estas clases 
+ y propiedades son descritas como un vocabulario RDF utilizando RDF Vocabulary 
+ Description Language, RDFSchema (RDFS). El documento oficial con la especificación 
+ del lenguaje &nbsp;indica 
+ todo lo pertinente a este lenguaje.</p>
+
+<p>&nbsp;</p>
+
+<p class="hcp1">RDFS provee las facilidades para describir 
+ clases y propiedades y que propiedades se esperan utilizar para describir 
+ que clases (por ejemplo educación:grado se espera describir a educación:estudiante). 
+ Es decir que RDFS define un sistema de tipos para RDF. RDFS permite, por 
+ ejemplo, indicar que un recurso es una instancia de cierta clase, o también 
+ permite organizar jerarquías de clases. RDFS simplemente provee información 
+ adicional de clases y propiedades que se puede o no tomar en cuenta. </p>
+
+<p>&nbsp;</p>
+
+<p class="hcp1">RDFS consiste de un vocabulario como esta 
+ definido anteriormente con un significado específico y predeterminado 
+ de sus términos, el cual tiene como prefijo el URI http://www.w3.org/2000/01/rdf-schema# 
+ y rdfs: como QName asociado. Para poder procesar RDFS, el software debe 
+ ser escrito utilizando el significado destinado de los términos que define.</p>
+
+</body>
+</html>
